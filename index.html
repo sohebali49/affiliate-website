@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Oman Games - Win luxury prizes including BMW X1, gold jewelry, diamonds, and residential properties. Join VIP events with exciting rewards worth millions." />
+  <meta name="keywords" content="Oman Games, VIP events, luxury prizes, BMW, gold jewelry, diamonds, win prizes, online gaming, referral rewards" />
+  <meta name="author" content="Oman Games" />
+  <meta property="og:title" content="Oman Games - Win Amazing Luxury Prizes" />
+  <meta property="og:description" content="Join thousands of players worldwide in Oman VIP Events. Win BMW X1, gold jewelry, diamonds, and more luxury prizes!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://omangame.fun/" />
+  <meta property="og:image" content="https://omangame.fun/og-image.jpg" />
+  <title>Oman Games - Win Luxury Prizes | VIP Events & Amazing Rewards</title>
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-light: #FFD700;
+      --gold-dark: #B8941E;
+      --maroon: #800020;
+      --maroon-dark: #5a0016;
+      --maroon-darker: #3d000f;
+      --black: #000000;
+      --dark-bg: #1a1a1a;
+      --red-border: #8B0000;
+      --white: #ffffff;
+      --gray-text: #cccccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      min-height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, var(--maroon-darker) 0%, var(--maroon) 50%, var(--maroon-dark) 100%);
+      background-attachment: fixed;
+      color: var(--white);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a {
+      outline-offset: 3px;
+    }
+
+    /* Header Styles */
+    .header {
+      background: linear-gradient(135deg, rgba(128, 0, 32, 0.95) 0%, rgba(90, 0, 22, 0.98) 100%);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 2px solid var(--gold);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: var(--gold-light);
+      text-shadow: 0 0 10px var(--gold), 2px 2px 4px rgba(0, 0, 0, 0.8);
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+      color: var(--white);
+      text-shadow: 0 0 20px var(--gold-light), 0 0 30px var(--gold);
+      transform: scale(1.05);
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--white);
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--gold-light), var(--gold));
+      transform: translate(-50%, -50%);
+      transition: width 0.4s ease, height 0.4s ease;
+      z-index: -1;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--maroon-darker);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 20px var(--gold-light), 0 0 30px var(--gold), inset 0 0 10px var(--gold-light);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:focus::before {
+      width: 200%;
+      height: 200%;
+    }
+
+    /* Shine animation for nav items */
+    @keyframes shine {
+      0% {
+        box-shadow: 0 0 5px var(--gold);
+      }
+      50% {
+        box-shadow: 0 0 20px var(--gold-light), 0 0 30px var(--gold);
+      }
+      100% {
+        box-shadow: 0 0 5px var(--gold);
+      }
+    }
+
+    .nav-link:hover {
+      animation: shine 1.5s infinite;
+    }
+
+    /* Mobile Menu Icon */
+    .menu-icon {
+      display: none;
+      min-width: 40px;
+      min-height: 40px;
+      width: 2.5em;
+      height: 2.5em;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .menu-icon span {
+      width: 20px;
+      height: 2px;
+      background-color: var(--gold);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-icon:hover,
+    .menu-icon:focus {
+      background-color: rgba(212, 175, 55, 0.15);
+      transform: scale(1.1);
+      box-shadow: 0 0 15px var(--gold);
+      outline: none;
+    }
+
+    /* Hero Banner Image */
+    .hero-banner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-banner-img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      border: 3px solid var(--gold);
+    }
+
+    .hero-banner-img:hover,
+    .hero-banner-img:focus {
+      transform: scale(1.02) translateY(-5px);
+      box-shadow: 0 0 30px var(--gold-light), 0 0 50px var(--gold), 0 15px 50px rgba(0, 0, 0, 0.7);
+      border-color: var(--gold-light);
+      outline: none;
+    }
+
+    .container {
+      width: 100%;
+      padding: 32px 20px 40px 20px;
+      max-width: 1380px;
+      margin: 0 auto;
+      min-height: calc(100vh - 55px);
+    }
+
+    section,
+    .section-title {
+      width: 100%;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+      user-select: none;
+      text-shadow: 0 0 20px var(--gold), 2px 2px 6px rgba(0, 0, 0, 0.9);
+      animation: titleGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes titleGlow {
+      0%, 100% {
+        text-shadow: 0 0 20px var(--gold), 2px 2px 6px rgba(0, 0, 0, 0.9);
+      }
+      50% {
+        text-shadow: 0 0 30px var(--gold-light), 0 0 40px var(--gold), 2px 2px 6px rgba(0, 0, 0, 0.9);
+      }
+    }
+
+    .hero p {
+      color: var(--gray-text);
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      color: var(--maroon-darker);
+      padding: 15px 40px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+
+    .cta-button:hover::before,
+    .cta-button:focus::before {
+      width: 300%;
+      height: 300%;
+    }
+
+    .cta-button:hover,
+    .cta-button:focus {
+      background: linear-gradient(135deg, var(--white), var(--gold-light));
+      color: var(--maroon);
+      box-shadow: 0 0 25px var(--gold-light), 0 0 40px var(--gold);
+      transform: translateY(-3px) scale(1.05);
+      outline: none;
+    }
+
+    .intro-section {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(90, 0, 22, 0.7));
+      padding: 30px 30px;
+      border-radius: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.12em;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid var(--gold);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro-section h2 {
+      color: var(--gold-light);
+      margin-bottom: 15px;
+      font-size: 2em;
+      user-select: none;
+      text-shadow: 0 0 10px var(--gold);
+    }
+
+    .intro-section p {
+      color: var(--gray-text);
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: var(--gold-light);
+      margin: 40px 0 30px;
+      letter-spacing: 3px;
+      font-weight: 900;
+      user-select: none;
+      text-shadow: 0 0 15px var(--gold), 2px 2px 5px rgba(0, 0, 0, 0.9);
+    }
+
+    .steps-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-bottom: 30px;
+    }
+
+    .step-card {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(90, 0, 22, 0.8));
+      border: 2px solid var(--red-border);
+      border-radius: 15px;
+      flex: 1 1 320px;
+      max-width: 350px;
+      padding: 25px 18px 18px 18px;
+      margin: auto;
+      min-width: 230px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.4s ease;
+      cursor: default;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .step-card:hover,
+    .step-card:focus-within {
+      border-color: var(--gold-light);
+      box-shadow: 0 0 25px var(--gold-light), 0 0 40px var(--gold);
+      transform: translateY(-8px) scale(1.03);
+      background: linear-gradient(135deg, rgba(26, 26, 26, 1), rgba(128, 0, 32, 0.9));
+      outline: none;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--maroon-darker);
+      margin: 0 auto 15px;
+      user-select: none;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .step-card:hover .step-number {
+      transform: rotate(360deg) scale(1.1);
+      box-shadow: 0 0 20px var(--gold-light);
+    }
+
+    .step-title {
+      color: var(--gold-light);
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      user-select: none;
+      text-shadow: 0 0 5px var(--gold);
+    }
+
+    .step-description {
+      color: var(--gray-text);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .step-card a {
+      margin-top: 8px;
+      font-size: 1em;
+    }
+
+    /* Enhanced Countdown Timer */
+    .countdown {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(128, 0, 32, 0.8));
+      padding: 35px 20px;
+      border-radius: 20px;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 850px;
+      border: 3px solid var(--gold);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(212, 175, 55, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent);
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .countdown h3 {
+      color: var(--gold-light);
+      font-size: 26px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      user-select: none;
+      text-shadow: 0 0 15px var(--gold);
+      position: relative;
+      z-index: 1;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .countdown-date {
+      color: var(--white);
+      font-size: 18px;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+    }
+
+    .countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .time-box {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      padding: 20px 28px;
+      border-radius: 15px;
+      min-width: 90px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border: 2px solid var(--gold-light);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .time-box:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 0 30px var(--gold-light), 0 0 50px var(--gold);
+    }
+
+    .time-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .time-box:hover::before {
+      left: 100%;
+    }
+
+    /* Heartbeat animation for time values */
+    .time-value {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--maroon-darker);
+      display: block;
+      user-select: none;
+      animation: heartbeat 1.5s ease-in-out infinite;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      10% {
+        transform: scale(1.1);
+      }
+      20% {
+        transform: scale(1);
+      }
+      30% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+
+    .time-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--maroon-darker);
+      text-transform: uppercase;
+      user-select: none;
+      letter-spacing: 1px;
+    }
+
+    /* PRIZE GRID */
+    .prizes-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .prize-card {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(90, 0, 22, 0.8));
+      border: 2px solid var(--red-border);
+      border-radius: 15px;
+      width: 100%;
+      max-width: 390px;
+      min-width: 270px;
+      flex: 1 1 320px;
+      padding: 20px;
+      margin-bottom: 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: default;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .prize-card:hover,
+    .prize-card:focus-within {
+      border-color: var(--gold-light);
+      box-shadow: 0 0 30px var(--gold-light), 0 0 50px var(--gold);
+      transform: translateY(-10px) scale(1.02);
+      background: linear-gradient(135deg, rgba(26, 26, 26, 1), rgba(128, 0, 32, 0.95));
+      outline: none;
+      cursor: pointer;
+    }
+
+    .prize-badge {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      color: var(--maroon-darker);
+      padding: 10px 30px;
+      border-radius: 25px;
+      display: inline-block;
+      font-weight: 900;
+      font-size: 14px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      user-select: none;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .prize-card:hover .prize-badge {
+      box-shadow: 0 0 20px var(--gold-light), 0 0 30px var(--gold);
+      transform: scale(1.05);
+    }
+
+    .prize-requirement {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 13px;
+      color: var(--gray-text);
+      margin-bottom: 18px;
+      text-align: center;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .prize-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: #fff;
+      transition: all 0.4s ease;
+      border: 2px solid var(--gold);
+    }
+
+    .prize-image:hover,
+    .prize-image:focus {
+      filter: brightness(1.15) contrast(1.1);
+      box-shadow: 0 0 25px var(--gold-light), 0 0 40px var(--gold);
+      transform: scale(1.08);
+      outline: none;
+      cursor: pointer;
+      border-color: var(--gold-light);
+    }
+
+    .prize-title {
+      font-size: 20px;
+      color: #4A9EFF;
+      margin-bottom: 8px;
+      font-weight: 700;
+      user-select: none;
+      text-shadow: 0 0 5px rgba(74, 158, 255, 0.5);
+    }
+
+    .prize-subtitle {
+      color: var(--gold-light);
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      user-select: none;
+      text-shadow: 0 0 5px var(--gold);
+    }
+
+    .prize-value {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 5px;
+      user-select: none;
+    }
+
+    .prize-usd {
+      color: #BB86FC;
+      font-size: 18px;
+      margin-bottom: 10px;
+      user-select: none;
+      text-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+    }
+
+    .disclaimer {
+      color: #999;
+      font-size: 12px;
+      font-style: italic;
+      user-select: none;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--gold);
+      padding: 12px 30px;
+      border: 2px solid var(--gold);
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      user-select: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-secondary::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: radial-gradient(circle, var(--gold-light), var(--gold));
+      transform: translate(-50%, -50%);
+      transition: width 0.4s ease, height 0.4s ease;
+      z-index: -1;
+    }
+
+    .btn-secondary:hover::before,
+    .btn-secondary:focus::before {
+      width: 300%;
+      height: 300%;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      background-color: var(--gold);
+      color: var(--maroon-darker);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 20px var(--gold-light), 0 0 30px var(--gold);
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    .terms-section {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(128, 0, 32, 0.8));
+      padding: 30px 20px;
+      border-radius: 15px;
+      margin: 30px auto;
+      max-width: 900px;
+      border: 2px solid var(--gold);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .terms-section h2 {
+      text-align: center;
+      color: var(--gold-light);
+      font-size: 24px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      user-select: none;
+      text-shadow: 0 0 10px var(--gold);
+    }
+
+    .term-item {
+      background-color: rgba(139, 0, 0, 0.25);
+      border: 2px solid var(--red-border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+
+    .term-item:hover,
+    .term-item:focus-within {
+      border-color: var(--gold-light);
+      box-shadow: 0 0 15px var(--gold-light), 0 0 25px var(--gold);
+      transform: translateY(-3px);
+      background-color: rgba(139, 0, 0, 0.4);
+      outline: none;
+    }
+
+    .term-item-number {
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--maroon-darker);
+      margin-right: 15px;
+      font-size: 16px;
+      user-select: none;
+      box-shadow: 0 3px 10px rgba(212, 175, 55, 0.5);
+    }
+
+    .term-content {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 55px);
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #999;
+      font-size: 14px;
+      border-top: 2px solid var(--gold);
+      margin-top: 50px;
+      user-select: none;
+      background: linear-gradient(135deg, rgba(61, 0, 15, 0.9), rgba(90, 0, 22, 0.95));
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.6);
+      z-index: 99;
+      transition: all 0.3s;
+      border: 2px solid var(--gold-light);
+    }
+
+    .scroll-top:hover,
+    .scroll-top:focus {
+      transform: translateY(-8px) scale(1.1);
+      box-shadow: 0 0 25px var(--gold-light), 0 0 40px var(--gold);
+      outline: none;
+    }
+
+    .scroll-top::before {
+      content: '↑';
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--maroon-darker);
+      user-select: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .container {
+        max-width: 760px;
+      }
+
+      .prizes-grid,
+      .steps-container {
+        gap: 14px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .nav-menu {
+        gap: 5px;
+      }
+
+      .nav-link {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      html,
+      body {
+        font-size: 15px;
+      }
+
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+      }
+
+      /* Show mobile menu icon, hide desktop nav */
+      .nav-menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: flex;
+      }
+
+      .prizes-grid,
+      .steps-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .prize-card,
+      .step-card {
+        max-width: 100%;
+        min-width: 0;
+      }
+
+      .countdown-timer {
+        gap: 12px;
+      }
+
+      .time-box {
+        padding: 15px 20px;
+        min-width: 70px;
+      }
+
+      .time-value {
+        font-size: 28px;
+      }
+
+      .section-title {
+        font-size: 1.8em;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      .container {
+        max-width: 1800px;
+      }
+
+      .section-title,
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo" tabindex="0">OMAN GAMES</div>
+    
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu" aria-label="Main navigation">
+      <a href="#home" class="nav-link" tabindex="0">Home</a>
+      <a href="#how-to-play" class="nav-link" tabindex="0">How to Play</a>
+      <a href="#terms" class="nav-link" tabindex="0">Terms</a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" tabindex="0" role="button" aria-label="Register and Join Oman Games"
+      onclick="window.location.href='https://omangame.fun/#/register?r_code=944638176578'"
+      onkeypress="if(event.key==='Enter'){this.click();}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Hero Banner Image -->
+  <section class="hero-banner" id="home" aria-label="Oman Games promotional banner">
+    <img src="https://i.ibb.co/CpD50tqR/e2af2be0-f7a5-4314-9fcd-09e2ba58b2ed.jpg" 
+         alt="Oman Games - Withdraw fast, safe and stable" 
+         class="hero-banner-img"
+         tabindex="0"
+         onclick="window.location.href='https://omangame.fun/#/register?r_code=944638176578'"
+         onkeypress="if(event.key==='Enter'){this.click();}" />
+  </section>
+
+  <main class="container" role="main">
+    <section class="hero" aria-label="Welcome section">
+      <h1>OMAN GAMES</h1>
+      <p>VIP EVENTS - WIN VIP PRIZES</p>
+      <a href="https://omangame.fun/#/register?r_code=944638176578" class="cta-button" role="button">Join Oman Now</a>
+    </section>
+
+    <section class="intro-section" aria-label="Introduction to Oman Games">
+      <h2>OMAN GAMES</h2>
+      <h3 style="color: var(--white); margin-bottom: 15px;">VIP EVENTS</h3>
+      <h3 style="color: var(--white); margin-bottom: 20px;">WIN VIP PRIZES</h3>
+      <p>Introducing Oman Games, There are various ways to participate in Oman Game events online. To get started,
+        search for Oman Games Registration, and you'll find options accessible worldwide. Follow these steps to join
+        Oman online events and get involved!</p>
+      <div class="button-group">
+        <a href="https://omangame.fun/#/register?r_code=944638176578" class="cta-button" role="button">Join Now</a>
+        <a href="#prizes" class="btn-secondary" role="button">View Prizes</a>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="how-to-play">HOW TO PARTICIPATE IN OMAN GAMES VIP EVENTS?</h2>
+    <p style="text-align: center; color: var(--gray-text); margin-bottom: 30px;">Follow these simple steps to join Oman
+      Games Events and start winning luxury prizes:</p>
+
+    <div class="steps-container">
+      <article class="step-card" tabindex="0" aria-labelledby="register-title" role="region">
+        <div class="step-number">1</div>
+        <h3 class="step-title" id="register-title">Register</h3>
+        <p class="step-description">Find the registration link and sign up using the provided invitation code.</p>
+        <a href="https://omangame.fun/#/register?r_code=944638176578" class="cta-button" style="margin-top: 15px;"
+          role="button">Register Now</a>
+      </article>
+
+      <article class="step-card" tabindex="0" aria-labelledby="login-title" role="region">
+        <div class="step-number">2</div>
+        <h3 class="step-title" id="login-title">Login</h3>
+        <p class="step-description">Log in to your account.</p>
+        <a href="https://omangame.fun/#/register?r_code=944638176578" class="btn-secondary" style="margin-top: 15px;"
+          role="button">Go to Login</a>
+      </article>
+
+      <article class="step-card" tabindex="0" aria-labelledby="contact-title" role="region">
+        <div class="step-number">3</div>
+        <h3 class="step-title" id="contact-title">Contact</h3>
+        <p class="step-description">Contact customer service to connect with your assigned teacher or tutor, who will guide
+          you through the event.</p>
+      </article>
+
+      <article class="step-card" tabindex="0" aria-labelledby="refer-title" role="region">
+        <div class="step-number">4</div>
+        <h3 class="step-title" id="refer-title">Refer</h3>
+        <p class="step-description">Refer people as required to qualify for special prizes in the Oman Games Events.</p>
+      </article>
+    </div>
+
+    <!-- Enhanced Countdown Timer -->
+    <section class="countdown" aria-label="Countdown to contest end date">
+      <h3>🏆 PRIZE POOL 🏆</h3>
+      <p class="countdown-date">📅 Contest Period: November 1 - December 31, 2025</p>
+      <div class="countdown-timer" id="countdown" role="timer" aria-live="polite" aria-atomic="true">
+        <div class="time-box" aria-label="Days remaining">
+          <span class="time-value" id="days">00</span>
+          <span class="time-label">Days</span>
+        </div>
+        <div class="time-box" aria-label="Hours remaining">
+          <span class="time-value" id="hours">00</span>
+          <span class="time-label">Hours</span>
+        </div>
+        <div class="time-box" aria-label="Minutes remaining">
+          <span class="time-value" id="minutes">00</span>
+          <span class="time-label">Minutes</span>
+        </div>
+        <div class="time-box" aria-label="Seconds remaining">
+          <span class="time-value" id="seconds">00</span>
+          <span class="time-label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="prizes">AMAZING LUXURY PRIZES TO WIN</h2>
+
+    <section class="prizes-grid" aria-label="List of prizes to win">
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="grand-prize-title">
+        <div class="prize-badge">GRAND PRIZE</div>
+        <p class="prize-requirement">(Refer 20,000 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/8a0aa6b0-ebae-461a-93f7-c35f3046afee"
+          alt="Deluxe Residential Condominium" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="grand-prize-title">OWN (1) DELUXE UNIT RESIDENTIAL CONDOMINIUM</h3>
+        <p class="prize-value">Price ₹ 55,00,000</p>
+        <p class="prize-usd">(USDT 58,824)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="first-prize-title">
+        <div class="prize-badge">1ST PRIZE</div>
+        <p class="prize-requirement">(Refer 6,000 People Top Up At Least 3 Times)</p>
+        <img src="https://i.ibb.co/MxwNJcVw/f0efb55f-559a-4516-8094-409724b90302.jpg" alt="BMW X1 2025"
+          class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="first-prize-title">THE ALL New Defender X1 2025</h3>
+        <p class="prize-subtitle">PREMIUM DIAMOND</p>
+        <p class="prize-value">Price ₹ 55,00,000</p>
+        <p class="prize-usd">(USDT 58,824)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="second-prize-title">
+        <div class="prize-badge">2ND PRIZE</div>
+        <p class="prize-requirement">(Refer 2,000 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/89e74043-9a4c-443c-9569-14d5b5245888"
+          alt="2 Carat Natural Round Diamond" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="second-prize-title">2 CARAT, NATURAL ROUND DIAMOND</h3>
+        <p class="prize-subtitle">LUXURY JEWELRY</p>
+        <p class="prize-value">Price ₹ 15,00,000</p>
+        <p class="prize-usd">(USDT 16,043)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="third-prize-title">
+        <div class="prize-badge">3RD PRIZE</div>
+        <p class="prize-requirement">(Refer 500 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/c7b05bfa-2c48-42d1-a165-58b32238184d"
+          alt="Gold & Diamond Luxury Jewelry" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="third-prize-title">GOLD & DIAMOND</h3>
+        <p class="prize-subtitle">LUXURY JEWELRY</p>
+        <p class="prize-value">Price ₹ 5,00,000</p>
+        <p class="prize-usd">(USDT 5,348)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="fifth-prize-title">
+        <div class="prize-badge">4TH PRIZE</div>
+        <p class="prize-requirement">(Refer 150 People Top Up At Least 3 Times)</p>
+        <img src="https://i.ibb.co/cpdBhCF/b9b417be-d721-4ce4-b046-7ed8390147de.jpg" alt="24K 999.9 Gold Treasure"
+          class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="fifth-prize-title">24K, 999.9 GOLD TREASURE</h3>
+        <p class="prize-subtitle">PURE GOLD, LASTING VALUE</p>
+        <p class="prize-value">Price ₹ 1,00,000</p>
+        <p class="prize-usd">(USDT 1,070)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="sixth-prize-title">
+        <div class="prize-badge">5TH PRIZE</div>
+        <p class="prize-requirement">(Refer 100 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/a02d0ba5-c361-435c-853b-67fdedee3f66"
+          alt="24K 999.9 Gold Accessories" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="sixth-prize-title">24K, 999.9 GOLD ACCESSORIES</h3>
+        <p class="prize-subtitle">TIMELESS LUXURY MEETS FUNCTION</p>
+        <p class="prize-value">Price ₹ 50,000</p>
+        <p class="prize-usd">(USDT 535)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="seventh-prize-title">
+        <div class="prize-badge">6TH PRIZE</div>
+        <p class="prize-requirement">(Refer 75 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/3e15ec1e-2764-4942-8d88-fb2d4370a426"
+          alt="22K(4GRAM) Oman Special Gold" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="seventh-prize-title">22K(4GRAM) OMAN SPECIAL GOLD</h3>
+        <p class="prize-subtitle">AUTHENTIC OMAN CRAFTSMANSHIP</p>
+        <p class="prize-value">Price ₹ 30,000</p>
+        <p class="prize-usd">(USDT 321)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="ninth-prize-title">
+        <div class="prize-badge">7TH PRIZE</div>
+        <p class="prize-requirement">(Refer 30 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/78c17a90-03d8-4d8d-b019-d4738c3e3c03"
+          alt="24K 999.9 Gold Earrings" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="ninth-prize-title">24K, 999.9 GOLD EARRINGS</h3>
+        <p class="prize-subtitle">RADIANT LUXURY FOR YOUR EARS</p>
+        <p class="prize-value">Price ₹ 10,000</p>
+        <p class="prize-usd">(USDT 107)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+
+      <article class="prize-card" tabindex="0" role="region" aria-labelledby="consolation-prize-title">
+        <div class="prize-badge">8TH PRIZE</div>
+        <p class="prize-requirement">(Refer 20 People Top Up At Least 3 Times)</p>
+        <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/468fa9ab-216a-45f6-a2cd-7a25cc275c24"
+          alt="Gold Treasure Box" class="prize-image" tabindex="0" />
+        <h3 class="prize-title" id="consolation-prize-title">GOLD TREASURE BOX</h3>
+        <p class="prize-subtitle">WIN BIG WITH OMAN'S CASH REWARD</p>
+        <p class="prize-value">Price ₹ 5000</p>
+        <p class="prize-usd">(USDT 53)</p>
+        <p class="disclaimer">(Photo For Illustrative Only)</p>
+      </article>
+    </section>
+
+    <section class="terms-section" id="terms" aria-labelledby="terms-heading">
+      <h2 id="terms-heading">📋 Terms &amp; Conditions</h2>
+      <div class="term-item" tabindex="0">
+        <span class="term-item-number">1</span>
+        <div class="term-content">
+          Eligible Agents Must Have Telegram Numbers To Contact Customer Service For Register On The Post To Be Activated To
+          Participate In This Event.
+        </div>
+      </div>
+      <div class="term-item" tabindex="0">
+        <span class="term-item-number">2</span>
+        <div class="term-content">
+          Winner Calculation Is Based On How Many Agents Are Able To Bring Active Members For A Period Of 2 Months From November 1
+          - December 31, 2025
+        </div>
+      </div>
+      <div class="term-item" tabindex="0">
+        <span class="term-item-number">3</span>
+        <div class="term-content">
+          Member / Downline Active In The Sense Of Members Who Have Deposited More Than 3 Times And Each Of Them Must Bind The Bank.
+          There Must Not Be Any Similarity In Data With Other Members, Either Account Names, Bank Account Numbers Or IP Addresses.
+        </div>
+      </div>
+      <div class="term-item" tabindex="0">
+        <span class="term-item-number">4</span>
+        <div class="term-content">
+          If The Percentage Of Active Members Who Make Deposits Only 3 Times Exceeds 20% Of The Total, Then We Will Do A Review For
+          An Indefinite Time.
+        </div>
+      </div>
+      <div class="term-item" tabindex="0">
+        <span class="term-item-number">5</span>
+        <div class="term-content">
+          Oman Has The Right To Cancel The Prize Winner If During The Process It Is Found Cheating In Any Form To Take Advantage Of
+          This Special Event.
+        </div>
+      </div>
+    </section>
+
+    <section style="text-align: center; margin: 50px 0;" aria-label="Call to action to join">
+      <h2 style="color: var(--gold-light); font-size: 28px; margin-bottom: 20px; text-shadow: 0 0 15px var(--gold);">READY TO WIN AMAZING LUXURY PRIZES?</h2>
+      <p style="color: var(--gray-text); margin-bottom: 25px; font-size: 1.1em;">Join thousands of players worldwide in Oman VIP Events. Easy
+        registration, exciting gameplay, and incredible prizes await you!</p>
+      <a href="https://omangame.fun/#/register?r_code=944638176578" class="cta-button" style="font-size: 18px; padding: 18px 50px;"
+        role="button">Join Oman Now</a>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p style="font-weight: 600;">&copy; 2025 Oman Games. All rights reserved.</p>
+    <p style="margin-top: 10px;">Play responsibly. Terms and conditions apply.</p>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" tabindex="0" role="button" aria-label="Scroll to top"></div>
+
+  <script>
+    // Countdown timer update function
+    function updateCountdown() {
+      const endDate = new Date('December 31, 2025 23:59:59').getTime();
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      if (distance < 0) {
+        document.getElementById('countdown').innerHTML = '<p style="color: var(--gold-light); font-size: 24px; font-weight: 900;">🎉 Contest Ended 🎉</p>';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Scroll to top button behavior
+    const scrollTop = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollTop.style.display = 'flex';
+      } else {
+        scrollTop.style.display = 'none';
+      }
+    });
+
+    scrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    scrollTop.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        scrollTop.click();
+      }
+    });
+
+    // Smooth scroll for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
